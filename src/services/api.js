@@ -2,8 +2,7 @@
 // CAREERLENS API SERVICE
 // ============================================================
 
-const API_BASE_URL =
-  "http://localhost:5000/api";
+const API_BASE_URL = "https://career-lens-8hil.onrender.com/api";
 
 // ============================================================
 // GENERIC API REQUEST

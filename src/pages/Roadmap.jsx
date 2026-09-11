@@ -23,6 +23,7 @@ function Roadmap({
   profileData,
   profileId,
   onBack,
+  onJobs
 }) {
   const targetCareer =
     profileData?.targetCareer ||
@@ -743,6 +744,32 @@ function Roadmap({
           )}
 
         </div>
+
+        {/* ==================================================
+            RECOMMENDED JOBS
+        ================================================== */}
+
+        <section className="mt-8 bg-blue-500/10 border border-blue-500/20 rounded-2xl p-8 text-center">
+          <div className="w-12 h-12 mx-auto rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center">
+            <Target size={24} />
+          </div>
+
+          <h2 className="mt-4 text-2xl font-bold">
+            Ready to Explore Opportunities?
+          </h2>
+
+          <p className="mt-2 text-slate-400">
+            View jobs matched to your career goal, skills, and CareerLens recommendations.
+          </p>
+
+          <button
+            type="button"
+            onClick={onJobs}
+            className="mt-6 inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold transition"
+          >
+            View Recommended Jobs
+          </button>
+        </section>
 
         {/* ==================================================
             COMPLETION

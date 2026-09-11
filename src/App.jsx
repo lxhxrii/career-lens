@@ -200,6 +200,7 @@ function App() {
   profileData={profileData}
   profileId={profileId}
   onBack={() => setPage("skillgap")}
+  onJobs={openJobs}
 />
     );
   }
