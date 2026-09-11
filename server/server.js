@@ -69,8 +69,8 @@ app.use("/api/analytics", analyticsRoutes);
 // START SERVER
 // ============================================================
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(
-    `CareerLens backend running on http://localhost:${PORT}`
+    `CareerLens backend running on port ${PORT}`
   );
 });
